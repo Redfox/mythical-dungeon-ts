@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite"
+    "serve": "vite --host"
   },
   "devDependencies": {
     "@rollup/plugin-alias": "^5.0.0",
