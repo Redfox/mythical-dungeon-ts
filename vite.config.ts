@@ -1,7 +1,13 @@
+import * as dotenv from 'dotenv'
 import { defineConfig } from 'vite';
 import replace from '@rollup/plugin-replace';
 
+dotenv.config()
+
 export default defineConfig({
+  server: {
+    port: Number(process.env.PORT)
+  },
   build: {
     rollupOptions: {
       plugins: [
